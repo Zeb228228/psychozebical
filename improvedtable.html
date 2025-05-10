@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tables advanced</title>
+</head>
+<style>
+    table{
+        border-collapse:collapse;
+        text-align: center;
+    }
+    table, tr, td {
+        border: 1px solid black;
+    }
+    thead{
+        background-color: lightblue;
+        color: black;
+        font-weight: bold;
+    }
+    .largePadding{
+        padding: 20px;
+    }
+    .leftRightPaddings{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .topBottomPaddings{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+</style>
+<body>
+    <table>
+        <caption>To-Do list for today</caption>
+        <thead>
+            <tr>
+                <td>Task</td>
+                <td>Time</td>
+                <td class="largePadding">Importance (1-3)</td>
+                <td class="largePadding">Completed (Yes/No)</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="topBottomPaddings">Call grandma</td>
+                <td class="leftRightPaddings">After 10AM</td>
+                <td>!!</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td class="topBottomPaddings">Finish Web-Design Assignment</td>
+                <td>By 9PM</td>
+                <td>!!!</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td class="topBottomPaddings">Bake a cake for Martha's birthday</td>
+                <td>16:00</td>
+                <td>!!!</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td class="leftRightPaddings topBottomPaddings">Watch the new Squid Game season</td>
+                <td>Before bed</td>
+                <td>!</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td class="topBottomPaddings">Buy new sunscreen</td>
+                <td>15:00</td>
+                <td>!!</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td class="topBottomPaddings">Buy concert tickets</td>
+                <td>18:00</td>
+                <td>!!</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
