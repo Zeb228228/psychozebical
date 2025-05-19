@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>team</title>
+</head>
+<style>
+    /* centers the cards + alligns them in an "inline" order */
+    .card {
+        display: inline-block;
+        width: 20%;
+        vertical-align: top;
+        text-align: center;
+        margin-left: 10%;
+    }
+    p{
+        max-width: 50%;
+        text-align: center;
+        margin-left: 25%;
+    }
+    h3{
+        text-align: center;
+    }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* this is used for the effect of the card being moved a bit upwards (and therefore feeling more important) */
+    .center{
+        margin-top: -50px;
+    }
+</style>
+<body>
+    <div> <!-- all rows -->
+        <div style="height: 200px; width: 100%;"></div> <!-- empty space to separate from top -->
+        <div> <!-- row -->
+            <div class="card">
+                <img src="a.png" height="100px" width="100px">
+                <h3>Dave, Developer</h3>
+                <p class="text">Dave is the developer of the group. He is the developer of the group and the developer of the group always develops.</p>
+            </div>
+            <div class="card center">
+                <img src="b.png" height="100px" width="100px">
+                <h3>Martha, CEO</h3>
+                <p class="text">Martha is the leader of the group. She is the leader of the group and the leader of the group always leads.</p>
+            </div>
+            <div class="card">
+                <img src="c.png" height="100px" width="100px">
+                <h3>Ralph, Coder</h3>
+                <p class="text">Ralph is the coder of the group. He is the coder of the group and the coder of the group always codes.</p>
+            </div>
+        </div>
+        <div style="height: 100px; width: 100%;"></div> <!-- empty space to separate rows -->
+        <div> <!-- row -->
+            <div class="card">
+                <img src="d.png" height="100px" width="100px">
+                <h3>Lynda, Designer</h3>
+                <p>Lynda is the designer of the group. She is the designer of the group and the designer of the group always designs.</p>
+            </div>
+            <div class="card">
+                <img src="e.png" height="100px" width="100px">
+                <h3>Cathy, Tester</h3>
+                <p>Cathy is the tester of the group. She is the tester of the group and the tester of the group always tests.</p>
+            </div>
+            <div class="card">
+                <img src="f.png" height="100px" width="100px">
+                <h3>Rose, Clothing Designer</h3>
+                <p>Rose is the clothing designer of the group. She is the clothing designer of the group and the clothing designer of the group always designs clothing.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
