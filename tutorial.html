@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video and audio test</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                'introTitle introTitle'
+                'it1 it2';
+            padding-left: 20%;
+            margin-top: 100px;
+            max-width: 800px;
+        }
+        .introTitle{
+            grid-area: introTitle;
+            margin-bottom: 25px;
+        }
+        .it1{
+            grid-area: it1;
+            color: grey;
+        }
+        .it2{
+            grid-area: it2;
+            text-align: right;
+            color: grey;
+            margin-right: 18%;
+        }
+        h1, p, h2{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .divider{
+            background-color: grey;
+            max-width: 900px;
+            margin-left: 20%;
+            height: 3px;
+            margin-top: -40px;
+            margin-bottom: 50px;
+        }
+        .content{
+            padding-left: 22%;
+            max-width: 900px;
+        }
+        img{
+            border: 2px black solid;
+        }
+    </style>
+</head>
+<body>
+    <section class="grid-container">
+        <h1 class="introTitle">How to add a video from YouTube to your website in 5 simple steps.</h1>
+        <p class="introText it1">Anatoly Ulitin</p>
+        <p class="introText it2">2025</p>
+    </section>
+    <div class="divider"></div>
+    <div class="content">
+        <p style="margin-bottom: 50px;">Getting videos to your website from YouTube is blah blah blah very important nowadays because blah blah more intro text blah blah.</p>
+        <h2 style="margin-bottom: 40px;">1. Open YouTube.</h2>
+        <p style="margin-bottom: 30px;">Via the URL or whatever, just do it.</p>
+        <img src="step 1.jpg" width="80%" height="80%" style="margin-bottom: 50px;">
+        <h2 style="margin-bottom: 40px;">2. Find the desired video and open it.</h2>
+        <p style="margin-bottom: 30px;">You can use the searchbar and then just click on the video.</p>
+        <img src="step 2.png" width="80%" height="80%" style="margin-bottom: 50px;">
+        <h2 style="margin-bottom: 30px;">3. Click "share" below the video.</h2>
+        <img src="step 3.png" width="80%" height="80%" style="margin-bottom: 50px;">
+        <h2 style="margin-bottom: 30px;">4. In the pop out, click on "Embed".</h2>
+        <img src="step 4.jpg" width="80%" height="80%" style="margin-bottom: 50px;">
+        <h2 style="margin-bottom: 40px;">5. Click on "copy" in the bottom right corner and paste anywhere into your HTML!</h2>
+        <p style="margin-bottom: 30px;">Note that by changing the "width" and "height" parameters in the beginning of the line of code you just pasted you can change the size of the video!</p>
+        <img src="step 5.png" width="80%" height="80%" style="margin-bottom: 50px;">
+        <p style="margin-bottom: 50px;">Enjoy!!!</p>
+    </div>
+    
+
+</body>
+</html>
