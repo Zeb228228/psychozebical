@@ -1,0 +1,65 @@
+table, tr, td {
+        border: 3px solid black;
+}
+table{
+    width: 1000px;
+}
+th{
+    background-color: black;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+caption{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-shadow:
+        -1px -1px 0 white,
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white;
+}
+div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+td{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+.nonSeason td:first-child{
+    text-align: right;
+    padding-right: 20px;
+}
+td.season{
+    text-align: left;
+    padding-left: 50px;
+    font-weight: bold;
+    background-color: lightgrey;
+    color: black;
+}
+.win{
+    background-color: green;
+}
+.Lose{
+    background-color: red;
+}
+.win, .Lose{
+    font-weight: bold;
+    color: white;
+    opacity: 0.6;
+    border-color: rgba(0, 0, 0, 1);
+}
+body{
+    background-image: url("a.jfif");
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
