@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid training: Puzzle</title>
+  <style>
+    .grid-container{
+        display: grid;
+         grid-template-columns: repeat(3, 1fr);
+        column-gap: 15px;
+        row-gap: 0;
+        grid-template-areas:
+        'Name Name Assignment'
+        'D A G'
+        'J B C'
+        'F I E';
+        
+    }
+    .Name{
+        grid-area: Name;
+        padding-left: 200px;
+    }
+    .Assignment{
+        grid-area: Assignment;
+    }
+    .A{
+        grid-area: A;
+    }
+    .B{
+        grid-area: B;
+    }
+    .C{
+        grid-area: C;
+    }
+    .D{
+        grid-area: D;
+    }
+    .E{
+        grid-area: E;
+    }
+    .F{
+        grid-area: F;
+    }
+    .G{
+        grid-area: G;
+    }
+    .I{
+        grid-area: I;
+    }
+    .J{
+        grid-area: J;
+    }
+    img{
+        width:100%;
+        border: 10px dashed black;
+    }
+    p{
+        font-size: 80px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .Assignment p{
+        text-align: right;
+        padding-right: 200px;
+    }
+    .falseImage{
+        display: none;
+    }
+    
+  </style>
+</head>
+<body>
+  <section class="grid-container">
+    <div class="Name"><p>Anatoly Ulitin</p></div>
+    <div class="Assignment"><p>Grid training: Puzzle</p></div>
+    <img class="A" src="images/puzzle3_A.jpg">
+    <img class="B" src="images/puzzle3_B.jpg">
+    <img class="C" src="images/puzzle3_C.jpg">
+    <img class="D" src="images/puzzle3_D.jpg">
+    <img class="E" src="images/puzzle3_E.jpg">
+    <img class="F" src="images/puzzle3_F.jpg">
+    <img class="G" src="images/puzzle3_G.jpg">
+    <img class="I" src="images/puzzle3_I.jpg">
+    <img class="J" src="images/puzzle3_J.jpg">
+    <img class="falseImage" src="images/puzzle3_H.jpg">
+  </section>
+  
+</body>
+</html>
