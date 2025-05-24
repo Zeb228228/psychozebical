@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid training: Puzzle</title>
+  <style>
+    @font-face{
+        src: url(fonts/Comic_CAT.otf);
+        font-family: numbers;
+    }
+    .button{
+        font-size: 80px;
+        display: inline-block;
+        font-family: numbers;
+        margin: 50px;
+    }
+    .button:hover{
+        cursor: pointer;
+    }
+    .border{
+        border: 3px black solid;
+        border-radius: 30%;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width: 50%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="images/butterfly.jpg">
+  <div class="content">
+    <div id="button1" class="button border">1</div>
+    <div id="button2" class="button">2</div>
+    <div id="button3" class="button">3</div>
+    <div id="button4" class="button">4</div>
+    <div id="button5" class="button">5</div>
+  </div>
+  <!-- JS was also written by me because I studied it -->
+  <script>
+    const image = document.querySelector("img");
+    document.getElementById("button1").addEventListener("click", function(){
+        document.getElementById("button1").classList.add("border");
+        document.getElementById("button2").classList.remove("border");
+        document.getElementById("button3").classList.remove("border");
+        document.getElementById("button4").classList.remove("border");
+        document.getElementById("button5").classList.remove("border");
+        image.style.filter="none";
+    });
+    document.getElementById("button2").addEventListener("click", function(){
+        document.getElementById("button1").classList.remove("border");
+        document.getElementById("button2").classList.add("border");
+        document.getElementById("button3").classList.remove("border");
+        document.getElementById("button4").classList.remove("border");
+        document.getElementById("button5").classList.remove("border");
+        image.style.filter="blur(3px)";
+    });
+    document.getElementById("button4").addEventListener("click", function(){
+        document.getElementById("button1").classList.remove("border");
+        document.getElementById("button2").classList.remove("border");
+        document.getElementById("button3").classList.remove("border");
+        document.getElementById("button4").classList.add("border");
+        document.getElementById("button5").classList.remove("border");
+        image.style.filter="hue-rotate(90deg)";
+    });
+    document.getElementById("button3").addEventListener("click", function(){
+        document.getElementById("button1").classList.remove("border");
+        document.getElementById("button2").classList.remove("border");
+        document.getElementById("button3").classList.add("border");
+        document.getElementById("button4").classList.remove("border");
+        document.getElementById("button5").classList.remove("border");
+        image.style.filter="contrast(150%)";
+    });
+    document.getElementById("button5").addEventListener("click", function(){
+        document.getElementById("button1").classList.remove("border");
+        document.getElementById("button2").classList.remove("border");
+        document.getElementById("button3").classList.remove("border");
+        document.getElementById("button4").classList.remove("border");
+        document.getElementById("button5").classList.add("border");
+        image.style.filter="saturate(50%)";
+    });
+    
+  </script>
+</body>
+</html>
