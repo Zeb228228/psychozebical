@@ -2,229 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>unique effects</title>
-  <style>
-    @keyframes anim{
-        from{ opacity: 1; }
-        to {opacity: 0;}
-    }
-    body {
-      margin: 0;
-      background: #222;
-      color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
-      padding: 20px;
-      width: 90vw;
-      max-width: 1600px;
-      height: 90vh;
-      justify-items: center;
-      align-items: center;
-      perspective: 1200px; 
-    }
-
-    .card {
-      width: 300px;
-      height: 400px;
-      cursor: pointer;
-      perspective: 1000px; 
-    }
-    .card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.8s ease;
-      transform-style: preserve-3d;
-      border-radius: 25%;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    }
-    .card-front, .card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 25%;
-      backface-visibility: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 24px;
-      font-weight: bold;
-      box-sizing: border-box;
-      border: 3px solid black;
-      color: white;
-    }
-    .card-front {
-      background-color: rgb(168, 168, 244);
-    }
-    .card-back {
-      background-color: rgb(120, 120, 230);
-      transform: rotateY(180deg);
-    }
-
-
-    .card1:hover .card-inner {
-      transform: rotateY(180deg);
-    }
-
-    .card2 .card-inner {
-      transition: transform 0.8s ease;
-    }
-    .card2:hover .card-inner {
-      transform: rotateX(180deg);
-    }
-    .card2 .card-back {
-      transform: rotateX(180deg);
-    }
-
-
-    .card3:hover .card-inner {
-      transform: rotateY(180deg);
-      box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
-    }
-
-    .card4:hover .card-inner {
-      transform: rotateY(180deg) scale(1.1);
-      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-
-    .card5:hover .card-inner {
-      transform: rotateY(180deg);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    }
-
-    .card6:hover .card-inner {
-      transform: rotateY(180deg) rotateZ(5deg);
-      transition-timing-function: ease-in-out;
-    }
-
-    .card7:hover .card-inner {
-      transform: rotateY(180deg);
-    }
-    .card7:hover .card-front,
-    .card7:hover .card-back {
-      text-shadow: 0 0 10px white;
-      transition: text-shadow 0.4s ease;
-    }
-    .card7 .card-front,
-    .card7 .card-back {
-      transition: text-shadow 0.4s ease;
-    }
-
-    .card8 .card-front {
-      background-image: url('images/butterfly.jpg');
-      background-size: cover;
-      background-position: center;
-      color: transparent;
-      border-color: transparent;
-    }
-    .card8 .card-back {
-      background-image: url('images/dinosaur.png');
-      background-size: cover;
-      background-position: center;
-      border-color: transparent;
-      color: transparent;
-      position: relative;
-    }
-    .card8 .card-back::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 28px;
-      font-weight: 700;
-      color: white;
-      text-shadow: 0 0 6px black;
-    }
-    .card8:hover .card-inner {
-      transform: rotateY(180deg);
-    }
-    img{
-
-        position: fixed;        
-        top: 0;          
-        left: 0;          
-        width: 100vw;           
-        height: 100vh;          
-        z-index: 9999;          
-        pointer-events: none;   
-        animation-name: anim;
-        animation-duration: 5s;
-        animation-fill-mode: forwards;
-        animation-delay: 3s;
-    }
-
-  </style>
+  <title>table</title>
 </head>
 <body>
-  <img src="images/fireworks.gif" width="100%" height="100%" >
-  <section class="grid-container">
-
-    <div class="card card1">
-      <div class="card-inner">
-        <div class="card-front">Question</div>
-        <div class="card-back">Answer</div>
-      </div>
-    </div>
-
-    <div class="card card2">
-      <div class="card-inner">
-        <div class="card-front">Question</div>
-        <div class="card-back">Answer</div>
-      </div>
-    </div>
-
-    <div class="card card3">
-      <div class="card-inner">
-        <div class="card-front">Question</div>
-        <div class="card-back">Answer</div>
-      </div>
-    </div>
-
-    <div class="card card4">
-      <div class="card-inner">
-        <div class="card-front">Question</div>
-        <div class="card-back">Answer</div>
-      </div>
-    </div>
-
-    <div class="card card5">
-      <div class="card-inner">
-        <div class="card-front">Question</div>
-        <div class="card-back">Answer</div>
-      </div>
-    </div>
-
-    <div class="card card6">
-      <div class="card-inner">
-        <div class="card-front">Question</div>
-        <div class="card-back">Answer</div>
-      </div>
-    </div>
-
-    <div class="card card7">
-      <div class="card-inner">
-        <div class="card-front">Question</div>
-        <div class="card-back">Answer</div>
-      </div>
-    </div>
-
-    <div class="card card8">
-      <div class="card-inner">
-        <div class="card-front"></div>
-        <div class="card-back"></div>
-      </div>
-    </div>
+  <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; text-align: center; font-family: Arial, sans-serif;">
+  <tr>
+    <th colspan="4" style="font-size: 18px; padding: 12px;">Scenery of a house</th>
+  </tr>
+  <tr>
+    <th style="background-color: #CE220C; color: white;">Red (flowers)</th>
+    <th style="background-color: #E3BA08; color: white;">Yellow (field)</th>
+    <th style="background-color: #425010; color: white;">Green (trees)</th>
+    <th style="background-color: #5497C1; color: white;">Sky (light blue)</th>
+  </tr>
+  <tr>
+    <td>#CE220C</td>
+    <td>#E3BA08</td>
+    <td>#425010</td>
+    <td>#5497C1</td>
+  </tr>
+  <tr>
+    <td>(227 186 8)</td>
+    <td>(227 186 8)</td>
+    <td>(66 80 16)</td>
+    <td>(84, 151, 193)</td>
+  </tr>
+  <tr>
+    <td>(6.8, 88.99%, 42.75%)</td>
+    <td>(48.77, 93.19%, 46.08%)</td>
+    <td>(73.13, 66.67%, 18.82%)</td>
+    <td>(203.12, 46.78%, 54.31%)</td>
+  </tr>
+  </table>
 
   </section>
 </body>
